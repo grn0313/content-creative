@@ -1213,6 +1213,7 @@ h3 {
   h1 {
     font-size: 2.02rem;
     line-height: 1.08;
+    word-break: break-word;
   }
 
   h2 {
@@ -1251,8 +1252,13 @@ h3 {
     display: none;
   }
 
+  .hero-visual {
+    min-height: auto;
+  }
+
   .portrait-card {
     width: min(100%, 310px);
+    min-width: 0;
     transform: none;
   }
 
