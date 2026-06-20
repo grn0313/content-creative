@@ -1369,22 +1369,27 @@ h3 {
   body { font-size: 15px; }
 
   .site-header {
+    position: fixed;
+    top: max(12px, env(safe-area-inset-top, 12px));
+    left: 16px;
+    right: 16px;
+    width: auto;
+    min-height: 56px;
+    margin: 0;
+    padding: 10px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 32px);
-    margin: env(safe-area-inset-top, 24px) auto 0;
-    padding: 8px 16px;
-    border-radius: var(--radius-lg);
     box-sizing: border-box;
   }
 
   .brand {
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
   }
   .brand-mark {
-    width: 36px; height: 36px;
+    width: 34px; height: 34px;
   }
 
   .menu-button {
@@ -1395,11 +1400,12 @@ h3 {
     gap: 5px;
     width: 42px;
     height: 42px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     cursor: pointer;
     z-index: 120;
+    flex: 0 0 auto;
   }
 
   .menu-button span {
