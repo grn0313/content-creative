@@ -1380,14 +1380,14 @@ h3 {
   }
 
   .menu-button {
-    display: block; flex: 0 0 42px;
-    position: fixed; top: 20px; right: 20px; z-index: 120;
-    justify-self: end;
+    display: block;
+    width: 42px; height: 42px;
+    z-index: 120;
   }
 
   .site-nav {
     position: fixed;
-    inset: 76px 16px auto;
+    top: 76px; left: 16px; right: 16px;
     display: none; flex-direction: column;
     align-items: stretch;
     padding: 14px;
