@@ -1373,9 +1373,8 @@ h3 {
     align-items: center;
     justify-content: space-between;
     width: calc(100% - 32px);
-    height: 56px;
-    margin: 8px auto;
-    padding: 0 16px;
+    margin: env(safe-area-inset-top, 24px) auto 0;
+    padding: 8px 16px;
     border-radius: var(--radius-lg);
     box-sizing: border-box;
   }
@@ -1383,7 +1382,6 @@ h3 {
   .brand {
     display: flex;
     align-items: center;
-    height: 36px;
   }
   .brand-mark {
     width: 36px; height: 36px;
@@ -1394,24 +1392,22 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4.5px;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    border-radius: 10px;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
     cursor: pointer;
     z-index: 120;
-    box-sizing: content-box;
   }
 
   .menu-button span {
     display: block;
-    width: 22px;
+    width: 18px;
     height: 2px;
-    background: var(--ink);
-    border-radius: 2px;
+    background: #e8eaed;
+    border-radius: 1px;
     transition: all 300ms ease;
   }
 
